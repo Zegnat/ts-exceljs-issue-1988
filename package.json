@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "exceljs": "^4.3.0",
+    "ts-node": "^10.5.0"
+  },
+  "devDependencies": {
+    "prettier": "^2.5.1",
+    "ts-node-dev": "^1.1.8"
+  },
+  "scripts": {
+    "start": "ts-node bug-1988.ts",
+    "test": "ts-node-dev --respawn --transpile-only --watch '*.xlsx' bug-1988.ts",
+    "prettier": "prettier --write bug-1988.ts"
+  }
+}
