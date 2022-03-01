@@ -8,8 +8,8 @@
     "ts-node-dev": "^1.1.8"
   },
   "scripts": {
-    "start": "ts-node bug-1988.ts",
-    "test": "ts-node-dev --respawn --transpile-only --watch '*.xlsx' bug-1988.ts",
-    "prettier": "prettier --write bug-1988.ts"
+    "start": "ts-node issue-1988.ts",
+    "test": "ts-node-dev --respawn --transpile-only --watch '*.xlsx' issue-1988.ts",
+    "prettier": "prettier --write issue-1988.ts"
   }
 }
