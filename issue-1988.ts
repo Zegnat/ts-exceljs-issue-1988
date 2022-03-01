@@ -5,6 +5,7 @@ import { CellHyperlinkValue, CellValue, Workbook } from "exceljs";
 // Type-guard to check if a CellValue is a Hyperlink.
 const isHyperlink = (cellValue: CellValue): cellValue is CellHyperlinkValue =>
   typeof cellValue === "object" &&
+  cellValue !== null &&
   "text" in cellValue &&
   "hyperlink" in cellValue;
 
